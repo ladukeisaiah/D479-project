@@ -1,0 +1,29 @@
+#attractions {
+    display: flex; 
+    justify-content: space-around; 
+    align-items: flex-start; 
+}
+
+.attraction-item {
+    width: 30%; 
+    margin: 10px; 
+    text-align: center; 
+}
+
+.attraction-item img {
+    width: 100%; 
+    height: auto; 
+    border-radius: 4px; 
+}
+.attraction-item p {
+    margin-top: 1em;
+}
+
+@media (max-width: 768px) {
+    #attractions {
+        flex-direction: column; 
+    }
+    .attraction-item {
+        width: 100%; 
+    }
+}

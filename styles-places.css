@@ -1,0 +1,31 @@
+#places-to-stay {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.stay-item {
+    width: 30%;
+    margin: 10px;
+    text-align: center;
+}
+
+.stay-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px; /* Optional: rounds the corners of the image */
+}
+
+.stay-item p {
+    margin-top: 1em;
+}
+
+/* Responsive behavior for smaller screens */
+@media (max-width: 768px) {
+    #places-to-stay {
+        flex-direction: column;
+    }
+    .stay-item {
+        width: 100%;
+    }
+}
